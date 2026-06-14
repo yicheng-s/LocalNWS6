@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#F5F5F5">
+
+    <DirectionalLayout
+        ohos:height="56vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#1E88E5"
+        ohos:padding="8vp">
+
+        <Button
+            ohos:id="$+id:btn_back"
+            ohos:height="40vp"
+            ohos:width="60vp"
+            ohos:text="← 返回"
+            ohos:text_size="14fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#1E88E5"/>
+
+        <Text
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:text="出入库记录"
+            ohos:text_size="20fp"
+            ohos:text_color="#FFFFFF"
+            ohos:text_alignment="center"/>
+    </DirectionalLayout>
+
+    
+    <DirectionalLayout
+        ohos:height="48vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#FFFFFF"
+        ohos:padding="8vp">
+
+        <Button
+            ohos:id="$+id:btn_filter_all"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:text="全部"
+            ohos:text_size="14fp"
+            ohos:background_element="#1E88E5"
+            ohos:text_color="#FFFFFF"
+            ohos:margin="2vp"/>
+
+        <Button
+            ohos:id="$+id:btn_filter_in"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:text="入库"
+            ohos:text_size="14fp"
+            ohos:background_element="#757575"
+            ohos:text_color="#FFFFFF"
+            ohos:margin="2vp"/>
+
+        <Button
+            ohos:id="$+id:btn_filter_out"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:text="出库"
+            ohos:text_size="14fp"
+            ohos:background_element="#757575"
+            ohos:text_color="#FFFFFF"
+            ohos:margin="2vp"/>
+
+        <TextField
+            ohos:id="$+id:search_field"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:weight="2"
+            ohos:hint="搜索"
+            ohos:text_size="14fp"
+            ohos:background_element="#F5F5F5"
+            ohos:padding="8vp"
+            ohos:margin="2vp"/>
+
+        <Button
+            ohos:id="$+id:btn_search"
+            ohos:height="40vp"
+            ohos:width="50vp"
+            ohos:text="🔍"
+            ohos:text_size="14fp"
+            ohos:margin="2vp"/>
+    </DirectionalLayout>
+
+    <ListContainer
+        ohos:id="$+id:record_list"
+        ohos:height="0vp"
+        ohos:weight="1"
+        ohos:width="match_parent"
+        ohos:background_element="#FFFFFF"/>
+</DirectionalLayout>

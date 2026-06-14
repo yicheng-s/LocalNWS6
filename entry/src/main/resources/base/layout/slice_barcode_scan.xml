@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#000000">
+
+
+
+    <StackLayout
+        ohos:id="$+id:camera_preview_container"
+        ohos:height="0vp"
+        ohos:weight="1"
+        ohos:width="match_parent"/>
+
+
+
+    <DirectionalLayout
+        ohos:height="120vp"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:background_element="#000000"
+        ohos:padding="16vp"
+        ohos:alignment="center">
+
+        <Text
+            ohos:id="$+id:scan_hint"
+            ohos:height="30vp"
+            ohos:width="match_parent"
+            ohos:text="将条形码对准摄像头，然后点击拍照识别"
+            ohos:text_size="16fp"
+            ohos:text_color="#FFFFFF"
+            ohos:text_alignment="center"
+            ohos:margin_bottom="12vp"/>
+
+        <DirectionalLayout
+            ohos:height="50vp"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:alignment="center">
+
+            <Button
+                ohos:id="$+id:btn_cancel_scan"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="取消"
+                ohos:text_size="18fp"
+                ohos:text_color="#FFFFFF"
+                ohos:background_element="#757575"
+                ohos:margin="8vp"/>
+
+            <Button
+                ohos:id="$+id:btn_capture"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="📷 拍照识别"
+                ohos:text_size="18fp"
+                ohos:text_color="#FFFFFF"
+                ohos:background_element="#1E88E5"
+                ohos:margin="8vp"/>
+
+            <Button
+                ohos:id="$+id:btn_manual_input"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="手动输入"
+                ohos:text_size="18fp"
+                ohos:text_color="#FFFFFF"
+                ohos:background_element="#FF9800"
+                ohos:margin="8vp"/>
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+
+
+    <DirectionalLayout
+        ohos:id="$+id:manual_input_layout"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="#FFFFFF"
+        ohos:padding="20vp"
+        ohos:visibility="hide"
+        ohos:alignment="center">
+
+        <Text
+            ohos:text="手动输入条形码"
+            ohos:text_size="20fp"
+            ohos:text_color="#333333"
+            ohos:height="40vp"
+            ohos:margin_bottom="16vp"/>
+
+        <TextField
+            ohos:id="$+id:manual_barcode_input"
+            ohos:height="50vp"
+            ohos:width="300vp"
+            ohos:hint="请输入条形码"
+            ohos:text_size="18fp"
+            ohos:background_element="#F5F5F5"
+            ohos:padding="12vp"
+            ohos:margin_bottom="16vp"/>
+
+        <DirectionalLayout
+            ohos:height="50vp"
+            ohos:width="300vp"
+            ohos:orientation="horizontal">
+
+            <Button
+                ohos:id="$+id:btn_manual_cancel"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="取消"
+                ohos:text_size="16fp"
+                ohos:background_element="#757575"
+                ohos:text_color="#FFFFFF"
+                ohos:margin="4vp"/>
+
+            <Button
+                ohos:id="$+id:btn_manual_confirm"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="确认"
+                ohos:text_size="16fp"
+                ohos:background_element="#43A047"
+                ohos:text_color="#FFFFFF"
+                ohos:margin="4vp"/>
+        </DirectionalLayout>
+    </DirectionalLayout>
+</DirectionalLayout>

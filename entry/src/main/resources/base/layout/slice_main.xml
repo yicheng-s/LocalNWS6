@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#F5F5F5">
+
+
+    <DirectionalLayout
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#1E88E5"
+        ohos:padding="12vp">
+
+        <Text
+            ohos:id="$+id:title_text"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:text="📦 仓库库存管理系统"
+            ohos:text_size="22fp"
+            ohos:text_color="#FFFFFF"
+            ohos:text_alignment="center_vertical"/>
+    </DirectionalLayout>
+
+    
+    <DirectionalLayout
+        ohos:id="$+id:menu_row1"
+        ohos:height="0vp"
+        ohos:weight="1"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:padding="12vp"/>
+
+    
+    <DirectionalLayout
+        ohos:id="$+id:menu_row2"
+        ohos:height="0vp"
+        ohos:weight="1"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:padding="12vp"/>
+
+    
+    <DirectionalLayout
+        ohos:id="$+id:menu_row3"
+        ohos:height="0vp"
+        ohos:weight="1"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:padding="12vp"/>
+
+    
+    <DirectionalLayout
+        ohos:height="80vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#FFFFFF"
+        ohos:padding="8vp">
+
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:orientation="vertical"
+            ohos:alignment="center">
+
+            <Text
+                ohos:id="$+id:stat_products"
+                ohos:height="30vp"
+                ohos:width="match_parent"
+                ohos:text="商品: 0"
+                ohos:text_size="14fp"
+                ohos:text_color="#666666"
+                ohos:text_alignment="center"/>
+            <Text
+                ohos:id="$+id:stat_records"
+                ohos:height="30vp"
+                ohos:width="match_parent"
+                ohos:text="记录: 0"
+                ohos:text_size="14fp"
+                ohos:text_color="#666666"
+                ohos:text_alignment="center"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:orientation="vertical"
+            ohos:alignment="center">
+
+            <Text
+                ohos:id="$+id:stat_assets"
+                ohos:height="30vp"
+                ohos:width="match_parent"
+                ohos:text="资产: 0"
+                ohos:text_size="14fp"
+                ohos:text_color="#666666"
+                ohos:text_alignment="center"/>
+            <Text
+                ohos:id="$+id:stat_stock"
+                ohos:height="30vp"
+                ohos:width="match_parent"
+                ohos:text="总库存: 0"
+                ohos:text_size="14fp"
+                ohos:text_color="#666666"
+                ohos:text_alignment="center"/>
+        </DirectionalLayout>
+    </DirectionalLayout>
+</DirectionalLayout>

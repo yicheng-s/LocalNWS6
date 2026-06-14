@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#F5F5F5">
+
+    <DirectionalLayout
+        ohos:height="56vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#E53935"
+        ohos:padding="8vp">
+
+        <Button
+            ohos:id="$+id:btn_back"
+            ohos:height="40vp"
+            ohos:width="60vp"
+            ohos:text="← 返回"
+            ohos:text_size="14fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#E53935"/>
+
+        <Text
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:text="📤 出库操作"
+            ohos:text_size="20fp"
+            ohos:text_color="#FFFFFF"
+            ohos:text_alignment="center"/>
+    </DirectionalLayout>
+
+    <ScrollView
+        ohos:height="0vp"
+        ohos:weight="1"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:padding="16vp">
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:background_element="#FFFFFF"
+                ohos:padding="16vp"
+                ohos:margin_bottom="12vp">
+
+                <Text ohos:text="扫描/输入条码（可选）" ohos:text_size="14fp" ohos:text_color="#666666"
+                      ohos:height="28vp"/>
+
+                <DirectionalLayout
+                    ohos:height="50vp"
+                    ohos:width="match_parent"
+                    ohos:orientation="horizontal">
+
+                    <TextField
+                        ohos:id="$+id:edit_barcode"
+                        ohos:height="match_parent"
+                        ohos:width="0vp"
+                        ohos:weight="1"
+                        ohos:hint="扫描或输入条形码（可选）"
+                        ohos:text_size="18fp"
+                        ohos:background_element="#F5F5F5"
+                        ohos:padding="12vp"/>
+
+                    <Button
+                        ohos:id="$+id:btn_scan"
+                        ohos:height="50vp"
+                        ohos:width="100vp"
+                        ohos:text="📷 扫码"
+                        ohos:text_size="16fp"
+                        ohos:background_element="#E53935"
+                        ohos:text_color="#FFFFFF"/>
+                </DirectionalLayout>
+
+                <Text ohos:text="商品名称 *" ohos:text_size="14fp" ohos:text_color="#666666"
+                      ohos:height="28vp" ohos:margin_top="8vp"/>
+                <TextField
+                    ohos:id="$+id:edit_product_name"
+                    ohos:height="48vp"
+                    ohos:width="match_parent"
+                    ohos:hint="请输入商品名称（必填）"
+                    ohos:text_size="16fp"
+                    ohos:background_element="#F5F5F5"
+                    ohos:padding="12vp"
+                    ohos:margin_bottom="8vp"/>
+
+                <Button
+                    ohos:id="$+id:btn_query_product"
+                    ohos:height="44vp"
+                    ohos:width="match_parent"
+                    ohos:text="查询商品信息"
+                    ohos:text_size="16fp"
+                    ohos:background_element="#43A047"
+                    ohos:text_color="#FFFFFF"
+                    ohos:margin_top="4vp"/>
+
+                <DirectionalLayout
+                    ohos:id="$+id:product_info_layout"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:orientation="vertical"
+                    ohos:margin_top="8vp">
+
+                    <Text ohos:id="$+id:product_info_name" ohos:text_size="18fp"
+                          ohos:text_color="#333333" ohos:height="30vp"/>
+                    <Text ohos:id="$+id:product_info_stock" ohos:text_size="16fp"
+                          ohos:text_color="#666666" ohos:height="30vp"/>
+                    <Text ohos:id="$+id:product_info_unit" ohos:text_size="16fp"
+                          ohos:text_color="#666666" ohos:height="30vp"/>
+                </DirectionalLayout>
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:background_element="#FFFFFF"
+                ohos:padding="16vp"
+                ohos:margin_bottom="12vp">
+
+                <Text ohos:text="出库信息" ohos:text_size="16fp" ohos:text_color="#333333" ohos:height="36vp"/>
+
+                <Text ohos:text="出库数量 *" ohos:text_size="14fp" ohos:text_color="#666666" ohos:height="28vp"/>
+                <TextField
+                    ohos:id="$+id:edit_quantity"
+                    ohos:height="48vp"
+                    ohos:width="match_parent"
+                    ohos:hint="请输入出库数量"
+                    ohos:text_size="16fp"
+                    ohos:background_element="#F5F5F5"
+                    ohos:padding="12vp"
+                    ohos:margin_bottom="12vp"/>
+
+                <Text ohos:text="领取部门" ohos:text_size="14fp" ohos:text_color="#666666" ohos:height="28vp"/>
+                <TextField
+                    ohos:id="$+id:edit_department"
+                    ohos:height="48vp"
+                    ohos:width="match_parent"
+                    ohos:hint="如: 行政部、技术部"
+                    ohos:text_size="16fp"
+                    ohos:background_element="#F5F5F5"
+                    ohos:padding="12vp"
+                    ohos:margin_bottom="12vp"/>
+
+                <Text ohos:text="领取人 *" ohos:text_size="14fp" ohos:text_color="#666666" ohos:height="28vp"/>
+                <TextField
+                    ohos:id="$+id:edit_person"
+                    ohos:height="48vp"
+                    ohos:width="match_parent"
+                    ohos:hint="请输入领取人姓名"
+                    ohos:text_size="16fp"
+                    ohos:background_element="#F5F5F5"
+                    ohos:padding="12vp"
+                    ohos:margin_bottom="12vp"/>
+
+                <Text ohos:text="备注" ohos:text_size="14fp" ohos:text_color="#666666" ohos:height="28vp"/>
+                <TextField
+                    ohos:id="$+id:edit_remark"
+                    ohos:height="60vp"
+                    ohos:width="match_parent"
+                    ohos:hint="备注信息（可选）"
+                    ohos:text_size="16fp"
+                    ohos:background_element="#F5F5F5"
+                    ohos:padding="12vp"
+                    ohos:margin_bottom="12vp"/>
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="vertical"
+                ohos:background_element="#FFFFFF"
+                ohos:padding="16vp"
+                ohos:margin_bottom="12vp">
+
+                <Text ohos:text="签字确认" ohos:text_size="16fp" ohos:text_color="#333333" ohos:height="36vp"/>
+                <Button
+                    ohos:id="$+id:btn_sign"
+                    ohos:height="50vp"
+                    ohos:width="match_parent"
+                    ohos:text="✍️ 去签字"
+                    ohos:text_size="18fp"
+                    ohos:background_element="#FF9800"
+                    ohos:text_color="#FFFFFF"/>
+                <Text
+                    ohos:id="$+id:sign_status"
+                    ohos:height="30vp"
+                    ohos:width="match_parent"
+                    ohos:text="尚未签字"
+                    ohos:text_size="14fp"
+                    ohos:text_color="#E53935"
+                    ohos:text_alignment="center_vertical"/>
+            </DirectionalLayout>
+
+            <Button
+                ohos:id="$+id:btn_confirm_stock_out"
+                ohos:height="56vp"
+                ohos:width="match_parent"
+                ohos:text="确 认 出 库"
+                ohos:text_size="20fp"
+                ohos:text_color="#FFFFFF"
+                ohos:background_element="#E53935"
+                ohos:margin_top="12vp"/>
+        </DirectionalLayout>
+    </ScrollView>
+</DirectionalLayout>

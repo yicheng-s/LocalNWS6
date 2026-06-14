@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#F5F5F5">
+
+    
+    <DirectionalLayout
+        ohos:height="56vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#1E88E5"
+        ohos:padding="8vp">
+
+        <Button
+            ohos:id="$+id:btn_back"
+            ohos:height="40vp"
+            ohos:width="60vp"
+            ohos:text="← 返回"
+            ohos:text_size="14fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#1E88E5"/>
+
+        <Text
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:text="商品管理"
+            ohos:text_size="20fp"
+            ohos:text_color="#FFFFFF"
+            ohos:text_alignment="center"/>
+
+        <Button
+            ohos:id="$+id:btn_add_product"
+            ohos:height="40vp"
+            ohos:width="80vp"
+            ohos:text="+ 新增"
+            ohos:text_size="14fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#43A047"/>
+    </DirectionalLayout>
+
+    
+    <DirectionalLayout
+        ohos:height="48vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#FFFFFF"
+        ohos:padding="8vp">
+
+        <TextField
+            ohos:id="$+id:search_field"
+            ohos:height="40vp"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:hint="输入商品名称或条码搜索"
+            ohos:text_size="16fp"
+            ohos:padding="8vp"/>
+
+        <Button
+            ohos:id="$+id:btn_search"
+            ohos:height="40vp"
+            ohos:width="60vp"
+            ohos:text="搜索"
+            ohos:text_size="14fp"
+            ohos:background_element="#1E88E5"
+            ohos:text_color="#FFFFFF"/>
+    </DirectionalLayout>
+
+    
+    <ListContainer
+        ohos:id="$+id:product_list"
+        ohos:height="0vp"
+        ohos:weight="1"
+        ohos:width="match_parent"
+        ohos:background_element="#FFFFFF"/>
+</DirectionalLayout>

@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "Warehouse"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Warehouse Inventory Management System"
+    },
+    {
+      "name": "app_name",
+      "value": "Warehouse Manager"
+    }
+  ]
+}

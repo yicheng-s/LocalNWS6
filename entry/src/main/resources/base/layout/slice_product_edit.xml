@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#F5F5F5">
+
+    
+    <DirectionalLayout
+        ohos:height="56vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#1E88E5"
+        ohos:padding="8vp">
+
+        <Button
+            ohos:id="$+id:btn_back"
+            ohos:height="40vp"
+            ohos:width="60vp"
+            ohos:text="← 返回"
+            ohos:text_size="14fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#1E88E5"/>
+
+        <Text
+            ohos:id="$+id:title_text"
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:text="新增商品"
+            ohos:text_size="20fp"
+            ohos:text_color="#FFFFFF"
+            ohos:text_alignment="center"/>
+
+        <Button
+            ohos:id="$+id:btn_save"
+            ohos:height="40vp"
+            ohos:width="80vp"
+            ohos:text="保存"
+            ohos:text_size="14fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#43A047"/>
+    </DirectionalLayout>
+
+    
+    <ScrollView
+        ohos:height="0vp"
+        ohos:weight="1"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:background_element="#FFFFFF"
+            ohos:padding="16vp">
+
+            <Text ohos:text="商品名称 *" ohos:text_size="14fp" ohos:text_color="#666666" ohos:height="30vp"/>
+            <TextField
+                ohos:id="$+id:edit_name"
+                ohos:height="48vp"
+                ohos:width="match_parent"
+                ohos:hint="请输入商品名称"
+                ohos:text_size="16fp"
+                ohos:background_element="#F5F5F5"
+                ohos:padding="12vp"
+                ohos:margin_bottom="12vp"/>
+
+            <Text ohos:text="条形码" ohos:text_size="14fp" ohos:text_color="#666666" ohos:height="30vp"/>
+            <DirectionalLayout
+                ohos:height="48vp"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal"
+                ohos:margin_bottom="12vp">
+
+                <TextField
+                    ohos:id="$+id:edit_barcode"
+                    ohos:height="match_parent"
+                    ohos:width="0vp"
+                    ohos:weight="1"
+                    ohos:hint="手动输入或点击扫码"
+                    ohos:text_size="16fp"
+                    ohos:background_element="#F5F5F5"
+                    ohos:padding="12vp"/>
+
+                <Button
+                    ohos:id="$+id:btn_scan_barcode"
+                    ohos:height="48vp"
+                    ohos:width="100vp"
+                    ohos:text="📷 扫码"
+                    ohos:text_size="14fp"
+                    ohos:background_element="#1E88E5"
+                    ohos:text_color="#FFFFFF"/>
+            </DirectionalLayout>
+
+            <Text ohos:text="商品分类" ohos:text_size="14fp" ohos:text_color="#666666" ohos:height="30vp"/>
+            <TextField
+                ohos:id="$+id:edit_category"
+                ohos:height="48vp"
+                ohos:width="match_parent"
+                ohos:hint="如: 办公用品、耗材、工具"
+                ohos:text_size="16fp"
+                ohos:background_element="#F5F5F5"
+                ohos:padding="12vp"
+                ohos:margin_bottom="12vp"/>
+
+            <Text ohos:text="单位" ohos:text_size="14fp" ohos:text_color="#666666" ohos:height="30vp"/>
+            <TextField
+                ohos:id="$+id:edit_unit"
+                ohos:height="48vp"
+                ohos:width="match_parent"
+                ohos:hint="如: 包、个、箱、台"
+                ohos:text_size="16fp"
+                ohos:background_element="#F5F5F5"
+                ohos:padding="12vp"
+                ohos:margin_bottom="12vp"/>
+
+            <Text ohos:text="初始库存数量" ohos:text_size="14fp" ohos:text_color="#666666" ohos:height="30vp"/>
+            <TextField
+                ohos:id="$+id:edit_stock"
+                ohos:height="48vp"
+                ohos:width="match_parent"
+                ohos:hint="0"
+                ohos:text_size="16fp"
+                ohos:background_element="#F5F5F5"
+                ohos:padding="12vp"
+                ohos:margin_bottom="12vp"
+                />
+
+            <Text ohos:text="备注" ohos:text_size="14fp" ohos:text_color="#666666" ohos:height="30vp"/>
+            <TextField
+                ohos:id="$+id:edit_description"
+                ohos:height="80vp"
+                ohos:width="match_parent"
+                ohos:hint="备注信息"
+                ohos:text_size="16fp"
+                ohos:background_element="#F5F5F5"
+                ohos:padding="12vp"
+                ohos:margin_bottom="12vp"/>
+
+            
+            <Button
+                ohos:id="$+id:btn_delete"
+                ohos:height="48vp"
+                ohos:width="match_parent"
+                ohos:text="删除此商品"
+                ohos:text_size="16fp"
+                ohos:text_color="#FFFFFF"
+                ohos:background_element="#E53935"
+                ohos:margin_top="20vp"
+                ohos:visibility="hide"/>
+        </DirectionalLayout>
+    </ScrollView>
+</DirectionalLayout>

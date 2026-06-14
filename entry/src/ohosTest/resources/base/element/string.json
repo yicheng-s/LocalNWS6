@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "仓库管理测试"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Warehouse Management Test"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="#FFFFFF">
+
+    
+    <DirectionalLayout
+        ohos:height="56vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#1E88E5"
+        ohos:padding="8vp">
+
+        <Text
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:text="请手写签名"
+            ohos:text_size="20fp"
+            ohos:text_color="#FFFFFF"
+            ohos:text_alignment="center_vertical"/>
+
+        <Button
+            ohos:id="$+id:btn_sign_clear"
+            ohos:height="40vp"
+            ohos:width="60vp"
+            ohos:text="清除"
+            ohos:text_size="14fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#FF9800"
+            ohos:margin="4vp"/>
+
+        <Button
+            ohos:id="$+id:btn_sign_confirm"
+            ohos:height="40vp"
+            ohos:width="80vp"
+            ohos:text="确认签字"
+            ohos:text_size="14fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#43A047"
+            ohos:margin="4vp"/>
+
+        <Button
+            ohos:id="$+id:btn_sign_cancel"
+            ohos:height="40vp"
+            ohos:width="60vp"
+            ohos:text="取消"
+            ohos:text_size="14fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#757575"
+            ohos:margin="4vp"/>
+    </DirectionalLayout>
+
+    
+    <Text
+        ohos:height="30vp"
+        ohos:width="match_parent"
+        ohos:text="请在下方白色区域内签名"
+        ohos:text_size="14fp"
+        ohos:text_color="#999999"
+        ohos:text_alignment="center"
+        ohos:padding="4vp"/>
+
+    
+    <StackLayout
+        ohos:id="$+id:signature_container"
+        ohos:height="0vp"
+        ohos:weight="1"
+        ohos:width="match_parent"
+        ohos:background_element="#F5F5F5"
+        ohos:padding="8vp"/>
+
+    
+    <Text
+        ohos:height="4vp"
+        ohos:width="match_parent"
+        ohos:background_element="#1E88E5"/>
+</DirectionalLayout>

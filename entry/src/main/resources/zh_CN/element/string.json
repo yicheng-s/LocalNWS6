@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "仓库管理"
+    },
+    {
+      "name": "mainability_description",
+      "value": "仓库库存管理系统 - 出入库管理、条码扫描、手写签字、固定资产统计"
+    },
+    {
+      "name": "app_name",
+      "value": "仓库库存管理"
+    }
+  ]
+}
