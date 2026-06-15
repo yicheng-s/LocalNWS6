@@ -4,79 +4,102 @@
     ohos:height="match_parent"
     ohos:width="match_parent"
     ohos:orientation="vertical"
-    ohos:background_element="#000000">
+    ohos:background_element="#F5F5F5">
 
+    <!-- 标题栏 -->
+    <DirectionalLayout
+        ohos:height="56vp"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="#1E88E5"
+        ohos:padding="8vp">
 
+        <Button
+            ohos:id="$+id:btn_cancel_scan"
+            ohos:height="40vp"
+            ohos:width="60vp"
+            ohos:text="← 返回"
+            ohos:text_size="14fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#1E88E5"/>
 
-    <StackLayout
-        ohos:id="$+id:camera_preview_container"
+        <Text
+            ohos:height="match_parent"
+            ohos:width="0vp"
+            ohos:weight="1"
+            ohos:text="条码扫描"
+            ohos:text_size="20fp"
+            ohos:text_color="#FFFFFF"
+            ohos:text_alignment="center"/>
+    </DirectionalLayout>
+
+    <!-- 主要操作区 -->
+    <DirectionalLayout
         ohos:height="0vp"
         ohos:weight="1"
-        ohos:width="match_parent"/>
-
-
-
-    <DirectionalLayout
-        ohos:height="120vp"
         ohos:width="match_parent"
         ohos:orientation="vertical"
-        ohos:background_element="#000000"
-        ohos:padding="16vp"
-        ohos:alignment="center">
+        ohos:alignment="center"
+        ohos:padding="40vp">
 
         <Text
             ohos:id="$+id:scan_hint"
-            ohos:height="30vp"
+            ohos:height="40vp"
             ohos:width="match_parent"
-            ohos:text="将条形码对准摄像头，然后点击拍照识别"
-            ohos:text_size="16fp"
-            ohos:text_color="#FFFFFF"
+            ohos:text="请选择扫描方式"
+            ohos:text_size="18fp"
+            ohos:text_color="#333333"
             ohos:text_alignment="center"
-            ohos:margin_bottom="12vp"/>
+            ohos:margin_bottom="40vp"/>
 
-        <DirectionalLayout
-            ohos:height="50vp"
-            ohos:width="match_parent"
-            ohos:orientation="horizontal"
-            ohos:alignment="center">
+        <!-- 系统相机拍照 -->
+        <Button
+            ohos:id="$+id:btn_capture"
+            ohos:height="80vp"
+            ohos:width="280vp"
+            ohos:text="📷 拍照扫描条码"
+            ohos:text_size="20fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#1E88E5"
+            ohos:margin_bottom="24vp"/>
 
-            <Button
-                ohos:id="$+id:btn_cancel_scan"
-                ohos:height="match_parent"
-                ohos:width="0vp"
-                ohos:weight="1"
-                ohos:text="取消"
-                ohos:text_size="18fp"
-                ohos:text_color="#FFFFFF"
-                ohos:background_element="#757575"
-                ohos:margin="8vp"/>
+        <Text
+            ohos:height="30vp"
+            ohos:width="280vp"
+            ohos:text="自动调用系统相机拍照后识别条码"
+            ohos:text_size="12fp"
+            ohos:text_color="#999999"
+            ohos:text_alignment="center"
+            ohos:margin_bottom="40vp"/>
 
-            <Button
-                ohos:id="$+id:btn_capture"
-                ohos:height="match_parent"
-                ohos:width="0vp"
-                ohos:weight="1"
-                ohos:text="📷 拍照识别"
-                ohos:text_size="18fp"
-                ohos:text_color="#FFFFFF"
-                ohos:background_element="#1E88E5"
-                ohos:margin="8vp"/>
+        <!-- 分割线 -->
+        <Text
+            ohos:height="2vp"
+            ohos:width="200vp"
+            ohos:background_element="#DDDDDD"
+            ohos:margin_bottom="40vp"/>
 
-            <Button
-                ohos:id="$+id:btn_manual_input"
-                ohos:height="match_parent"
-                ohos:width="0vp"
-                ohos:weight="1"
-                ohos:text="手动输入"
-                ohos:text_size="18fp"
-                ohos:text_color="#FFFFFF"
-                ohos:background_element="#FF9800"
-                ohos:margin="8vp"/>
-        </DirectionalLayout>
+        <!-- 手动输入 -->
+        <Button
+            ohos:id="$+id:btn_manual_input"
+            ohos:height="80vp"
+            ohos:width="280vp"
+            ohos:text="⌨️ 手动输入条码"
+            ohos:text_size="20fp"
+            ohos:text_color="#FFFFFF"
+            ohos:background_element="#FF9800"
+            ohos:margin_bottom="24vp"/>
+
+        <Text
+            ohos:height="30vp"
+            ohos:width="280vp"
+            ohos:text="直接输入商品上的条形码数字"
+            ohos:text_size="12fp"
+            ohos:text_color="#999999"
+            ohos:text_alignment="center"/>
     </DirectionalLayout>
 
-
-
+    <!-- 手动输入弹层 -->
     <DirectionalLayout
         ohos:id="$+id:manual_input_layout"
         ohos:height="match_content"
@@ -96,8 +119,8 @@
         <TextField
             ohos:id="$+id:manual_barcode_input"
             ohos:height="50vp"
-            ohos:width="300vp"
-            ohos:hint="请输入条形码"
+            ohos:width="match_parent"
+            ohos:hint="请输入条形码数字"
             ohos:text_size="18fp"
             ohos:background_element="#F5F5F5"
             ohos:padding="12vp"
@@ -105,7 +128,7 @@
 
         <DirectionalLayout
             ohos:height="50vp"
-            ohos:width="300vp"
+            ohos:width="match_parent"
             ohos:orientation="horizontal">
 
             <Button
